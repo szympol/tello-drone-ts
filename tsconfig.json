@@ -16,7 +16,8 @@
         "emitDecoratorMetadata": true
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "**/*.config.js",
     ],
     "exclude": [
         "node_modules"
