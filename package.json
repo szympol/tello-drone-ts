@@ -10,7 +10,8 @@
     "format": "eslint src/**/*.ts --fix",
     "postinstall": "husky install",
     "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "postpack": "pinst --enable",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,ts}": [
