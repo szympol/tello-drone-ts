@@ -13,11 +13,6 @@
     "postpack": "pinst --enable",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "eslint"
-    ]
-  },
   "keywords": [
     "tello",
     "drone",

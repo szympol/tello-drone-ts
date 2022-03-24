@@ -21,5 +21,6 @@ const users: Array<IUser> = [
 const getUser = (name: IUser['name']): IUser | undefined => users.find((user) => user.name === name);
 
 const user = getUser('Szymon');
+const user2 = getUser('Iwona');
 
-console.log(user);
+console.table([user, user2]);
