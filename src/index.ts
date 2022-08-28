@@ -22,5 +22,7 @@ const getUser = (name: IUser['name']): IUser | undefined => users.find((user) =>
 
 const user = getUser('Szymon');
 const user2 = getUser('Iwona');
+const user3 = getUser('Nela');
 
-console.table([user, user2]);
+// eslint-disable-next-line no-console
+console.table([user, user2, user3]);
