@@ -13,6 +13,7 @@
     }
   },
   "scripts": {
+    "dev": "concurrently \"tsup src/index.ts --watch\" \"nodemon build/index.js\"",
     "test": "",
     "build": "tsup",
     "release": "release publish"
@@ -20,7 +21,21 @@
   "files": [
     "./build"
   ],
-  "keywords": ["tello", "drone", "typescript", "control"],
+  "keywords": [
+    "tello",
+    "drone",
+    "typescript",
+    "tello-drone",
+    "tello-javascript",
+    "tello-typescript",
+    "tello-nodejs",
+    "dji",
+    "dji-tello",
+    "dji-tello-drone",
+    "dji-tello-javascript",
+    "dji-tello-typescript",
+    "dji-tello-nodejs"
+  ],
   "author": "Szymon Polanowski",
   "license": "MIT",
   "repository": {
@@ -29,7 +44,16 @@
   },
   "devDependencies": {
     "@ossjs/release": "^0.8.1",
+    "@types/express": "^5.0.0",
+    "@types/lodash-es": "^4.17.12",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "lodash-es": "^4.17.21",
+    "socket.io": "^4.8.1"
   }
 }
