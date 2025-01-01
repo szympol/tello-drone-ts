@@ -1,0 +1,88 @@
+<svg
+  width="200"
+  height="200"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Drone body (center) -->
+  <circle
+    cx="50"
+    cy="50"
+    r="6"
+    fill="white"
+    stroke="black"
+    stroke-width="2"
+  />
+
+  <!-- Arms (lines from center to propellers) -->
+  <line
+    x1="50"
+    y1="50"
+    x2="25"
+    y2="25"
+    stroke="black"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+  <line
+    x1="50"
+    y1="50"
+    x2="75"
+    y2="25"
+    stroke="black"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+  <line
+    x1="50"
+    y1="50"
+    x2="25"
+    y2="75"
+    stroke="black"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+  <line
+    x1="50"
+    y1="50"
+    x2="75"
+    y2="75"
+    stroke="black"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- Propellers (outer circles) -->
+  <circle
+    cx="25"
+    cy="25"
+    r="7"
+    fill="white"
+    stroke="black"
+    stroke-width="2"
+  />
+  <circle
+    cx="75"
+    cy="25"
+    r="7"
+    fill="white"
+    stroke="black"
+    stroke-width="2"
+  />
+  <circle
+    cx="25"
+    cy="75"
+    r="7"
+    fill="white"
+    stroke="black"
+    stroke-width="2"
+  />
+  <circle
+    cx="75"
+    cy="75"
+    r="7"
+    fill="white"
+    stroke="black"
+    stroke-width="2"
+  />
+</svg>
