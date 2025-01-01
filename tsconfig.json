@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
     "esModuleInterop": true,
     "outDir": "./build",
     "declaration": true,
