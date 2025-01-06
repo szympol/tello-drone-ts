@@ -14,9 +14,9 @@
     }
   },
   "scripts": {
-    "dev": "concurrently \"tsup src/index.ts --watch\" \"nodemon build/index.js\"",
+    "dev": "concurrently \"tsup --watch\" \"nodemon build/index.js\"",
     "test": "",
-    "build": "tsup",
+    "build": "tsup --dts",
     "release": "release publish"
   },
   "files": [

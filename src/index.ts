@@ -1,20 +1,10 @@
 import { throttle } from "lodash-es";
 import dgram from "node:dgram";
+import { EventEmitter } from "events";
+import { COMMANDS, HOST, PORT } from "./consts/index";
 
 const parseState = (state: string) =>
   state.split(";").map((el) => el.split(":"));
-
-const COMMANDS = {
-  initSDKmode: "command",
-} as const;
-
-const PORT = {
-  commands: 8889,
-  state: 8890,
-  stream: 11111,
-} as const;
-
-const HOST = "192.168.10.1";
 
 const drone = dgram.createSocket("udp4");
 const droneState = dgram.createSocket("udp4");
